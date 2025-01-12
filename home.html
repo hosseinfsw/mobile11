@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="fa" dir="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Digikala">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="هر آنچه که نیاز دارید با بهترین قیمت از دیجی‌کالا بخرید! جدیدترین انواع گوشی موبایل، لپ تاپ، لباس، لوازم آرایشی و بهداشتی، کتاب، لوازم خانگی، خودرو و... با امکان تعویض و مرجوعی آسان | ✓ارسال رايگان ✓پرداخت در محل ✓ضمانت بازگشت کالا - برای خرید کلیک کنید!">
+    <meta name="msvalidate.01" content="15B2F9DC1A9D64AEB0134F21A3D8A683">
+    <meta name="fontiran.com:license" content="THJBT">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ef394e">
+    <meta name="msapplication-navbutton-color" content="#ef394e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ef394e">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <title>صفحه اصلی دیجی‌کالا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../style-css-moboil.html">
+    <script>
+        // اگر عرض صفحه کمتر از 768 پیکسل بود، به طراحی موبایل منتقل شود
+        if (window.innerWidth <= 768) {
+            window.location.href = "../mobile.html";
+        }
+    </script>
+    <style>
+@font-face {
+    font-family: 'Yekan';
+    src:url('fonts/yekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+        body {
+    font-family:'Yekan.ttf';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+ font-size: 17px;
+}
+
+.header1 {
+ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 1.2em;
+            background-color: white;
+          
+        }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    height: 1.5em;;
+   
+  
+}
+
+.logo span {
+
+    font-weight: bold;
+    color: white;
+}
+
+.search-box {
+    flex: 1;
+    margin: 0 0px;
+    position: relative;
+    color: #333;
+}
+
+.search-box input {
+    width: 50%;
+    padding: .7rem 2.4rem .7rem .7rem;
+    border: none;
+    border-radius:.6em;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    margin-right:.8rem; 
+    background-color: rgb(233, 232, 232); 
+    height:2.7rem;
+}
+
+.search-box i {
+    position: absolute;
+    right:1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size:1.3rem;
+    cursor: pointer;
+    
+}
+
+.menu {
+    display: flex;
+    gap:1.3rem;
+    align-items: center;
+}
+
+.menu a img {
+    height:2rem;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+/* فاصله محتوا از هدر */
+.content {
+    margin-top:10rem; /* فاصله از نوار تبلیغات و هدر */
+}
+
+/* استایل فوتر */
+footer {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding:.8rem;
+    margin-top:2rem;
+}
+/* استایل هدر */
+/* تنظیمات کلی */
+html, body {
+    height: 100%; /* ارتفاع کامل صفحه */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* تنظیم ساختار به حالت عمودی */
+}
+
+/* محتوای اصلی */
+.content {
+    flex: 1; /* استفاده از فضای باقی‌مانده برای محتوا */
+}
+footer {
+background-color: #f8f8f8;
+color: #333;
+padding: 20px 0;
+font-family: Arial, sans-serif;
+}
+
+.footer-row {
+display: flex;
+justify-content: space-around; /* فاصله برابر بین آیتم‌ها */
+align-items: flex-start;
+padding: 50px ;
+
+}
+
+.footer-item {
+text-align: right;
+padding-left: 10px;
+margin-left: 240px;
+
+width: 60%;
+}
+
+.footer-item h2 {
+font-size:1.5rem;
+color: #ff0000;
+margin-bottom: 10px;
+}
+
+.footer-item ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-item ul li {
+margin: 5px 0;
+}
+
+.footer-item ul li a {
+text-decoration: none;
+color: #666;
+transition: color 0.3s;
+}
+
+.footer-item ul li a:hover {
+color: #000;
+}
+
+
+.footer-bottom button:hover {
+background-color: #0056b3;
+}
+.social-icons {
+display: flex;
+gap: 15px; /* فاصله بین آیکون‌ها */
+font-size: 14px;
+}
+
+.social-icons a {
+text-decoration: none;
+color: #bbb;
+transition: color 0.3s;
+}
+
+.social-icons a:hover {
+color: black;
+}
+
+.footer-bottom {
+text-align: center;
+padding: 10px 0;
+
+color: #ccc;
+font-size: 14px;
+margin-top: 80px;
+
+}
+.footer-images {
+display: flex;
+justify-content: space-around; /* فاصله مساوی بین تصاویر */
+align-items: center; /* ترازبندی عمودی تصاویر */
+margin: 20px 0; /* فاصله بالا و پایین از سایر محتوا */
+}
+
+.image-container {
+text-align: center; /* وسط‌چین کردن محتوا */
+}
+
+.image-container img {
+width: 60px; /* اندازه مناسب تصاویر */
+height: auto; /* حفظ نسبت ابعاد */
+margin-bottom: 10px; /* فاصله بین تصویر و نوشته */
+}
+
+.image-container p {
+font-size: 19px; /* اندازه نوشته */
+color: #333; /* رنگ نوشته */
+margin: 0; /* حذف فاصله پیش‌فرض */
+}
+.img24{
+filter: grayscale(100%);
+transition: filter 0.3 ease;
+}
+.img24:hover{
+
+
+filter: grayscale(0%);
+color: #000;
+
+}
+.download-bar {
+background-color: #535efd; /* رنگ آبی */
+padding: 15px;
+
+
+justify-content: center;
+gap: 5px; /* فاصله بین لینک‌ها */
+
+width: 96%;
+margin: auto;
+text-align: left;
+height: 55px;
+border-radius: 8px;
+}
+
+.store-link {
+color: white;
+text-decoration: none;
+font-size: 18px;
+font-weight: bold;
+padding: 10px 20px;
+
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.container {
+  
+    margin: auto;
+    text-align: right;
+}
+#more-text {
+    display: none;
+}
+.btn {
+    display: inline-block;
+   margin-top: 10px;
+   padding: 10px;
+    color: #657fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn.close {
+   color: #657fff;
+   font-size: 20px;
+}
+
+
+.support-button {
+position: fixed;
+bottom: 20px; /* فاصله از پایین */
+right: 20px; /* فاصله از راست */
+width: 60px; /* عرض دکمه */
+height: 60px; /* ارتفاع دکمه */
+border-radius: 50%; /* گرد کردن دکمه */
+background-color: #ffffff; /* رنگ پس‌زمینه دکمه */
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه */
+transition: background-color 0.3s; /* انیمیشن تغییر رنگ */
+}
+
+
+
+.support-button img {
+width: 45px; /* عرض آیکون */
+height: 45px; /* ارتفاع آیکون */
+}
+.collapsed {
+   
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   margin-right: 30px;
+   text-align: right;
+   font-size: 17px;
+   color: #8a8a8a;
+ 
+}
+.nevshte-footer{
+   display: inline;
+   text-align: right;
+   display: block;
+   margin-right: 8px;
+   margin-top: 7px;
+   
+   
+  
+}
+#more-text{
+   display: inline;
+   text-align: right;
+   display: block;
+   font-size:19px;
+   margin-right: 10px;
+   color: #8a8a8a;
+}
+button{
+   border: none;
+   font-size: 17px;
+   background-color: white;
+   color: #30aee0;
+   margin-top: -400px;
+   float: right;
+   margin-top:0px;
+   margin-right: 30px;
+   
+}
+
+.container {
+    margin: -17px ;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 50px;
+    max-width: 400px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+ 
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+    margin-top: 40px;
+}
+input[type="email"] {
+    width:170px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none; /* حذف حاشیه پیش‌فرض */
+    margin-right: 40px;
+}
+input[type="email"]:focus {
+    border-color: #aaa; /* تغییر رنگ حاشیه در حالت فوکوس */
+}
+.button {
+    background-color: #848586;
+    color: white;
+    border: none;
+    padding: 13px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 19px;
+
+    
+}
+
+.red-button {
+    background-color: #e60000 !important; /* رنگ قرمز */
+}
+
+.kasbokar{
+    width: 100px;
+    border: .2px solid rgb(209, 209, 209);
+    border-radius:8px;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-left: 30px;
+}
+.icon img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+.menu2 {
+      position: relative;
+      display: inline-block;
+    }
+
+    .menu-item1 {
+      cursor: pointer;
+      padding: 10px 15px;
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      position: relative;
+    }
+
+    .menu-item1:hover {
+      color: #e91e63;
+    }
+
+    .dropdown1 {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 200px;
+      z-index: 1000;
+      padding: 15px 20px;
+      display: none;
+      color: #333;
+    }
+
+    .menu2:hover .dropdown1 {
+      display: block;
+    }
+
+    .dropdown-item1 {
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      position: relative;
+    }
+
+    .dropdown-item1:hover {
+      color: #e91e63;
+      background-color: #dddbdb;
+    }
+
+    .dropdown-item1.active {
+      background-color: #f5f5f5;
+      color: #e91e63;
+    }
+
+    .submenu1 {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: -462px; /* نمایش در سمت راست دسته‌بندی */
+      background-color: #fff;
+      border-radius: 8px;
+      width: 400px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1001;
+    }
+
+    .dropdown-item1:hover .submenu1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .submenu-section1 {
+      font-size: 17px;
+      color: #333;
+    }
+
+    .submenu-section1 h4 {
+      font-size: 16px;
+      color: #ff0000;
+      margin-bottom: 10px;
+    }
+
+    .submenu-section1 ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .submenu-section1 ul li {
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+    .submenu-section1 ul li:hover {
+      color: #e91e63;
+    }
+    .menu-bar1 {
+            background-color: #ffffff;
+            padding: 10px 0;
+        border-bottom: 1px solid #f1f1f1;
+        }
+
+        .menu-bar1 ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-bar1 li {
+            font-size: 14px;
+            padding: 5px 10px; /* فاصله داخلی */
+            cursor: pointer;
+            white-space: nowrap; /* جلوگیری از شکستن متن */
+            margin-right: 20px; /* فاصله بین آیتم‌ها */
+            position: relative; /* برای استفاده از ::after */
+        }
+
+        /* اضافه کردن خط زیر آیتم منو */
+        .menu-bar1 li::after {
+            content: '';
+            position: absolute;
+            bottom: 0; /* خط دقیقاً زیر آیتم منو قرار می‌گیرد */
+            left: 0;
+            height: 2px; /* ضخامت خط */
+            width: 0; /* خط به صورت پیش‌فرض مخفی است */
+            background-color: red; /* رنگ خط */
+            transition: width 0.3s ease; /* انیمیشن خط */
+        }
+
+        /* نمایش خط هنگام هاور */
+        .menu-bar1 li:hover::after {
+            width: 100%; /* خط به طور کامل نمایش داده می‌شود */
+        }
+
+        /* حذف فاصله سمت راست برای آیتم آخر */
+        .menu-bar1 li:last-child {
+            margin-right: 0;
+        }
+        html {
+    scroll-behavior: smooth;
+}
+.button:active {
+    background-color: #b20000;
+    transform: scale(0.95);
+}
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+.slider {
+            position: relative;
+            width: 98%;
+            max-height: 400px;
+            margin: 50px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .navigation {
+            position: absolute;
+            margin-left:93%;
+            top: 84%;
+            width: 5%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        .prev, .next {
+            background: rgba(255, 255, 255, 0.7);
+            color: #333;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+           width: 40px;
+           height: 40px;
+           border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .prev:hover, .next:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: scale(1.1);
+        }
+
+        .dots {
+            text-align: center;
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: row-reverse; /* Dots will start from right */
+        }
+
+        .dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            margin: 0;
+            background: rgb(255, 255, 255);
+            border: 2px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .dot.active {
+            background: #000000;
+            border: 2px solid #000000;
+            transform: scale(1.3);
+        }
+        .mobile-only {
+  display: none;
+}
+       
+        </style>
+</head>
+<body dir="rtl">
+    <div class="img-1">
+<a href="#"><img src="../images/12.webp" alt=""></a>
+</div>
+    <header class="header1">
+        <div class="logo">
+            <img src="../images/full-horizontal.svg" alt="لوگو">
+           
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="جستجو">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="menu">
+            <a href="login and singup/singup.html">
+                <img src="../images/gf.png" alt="ثبت نام / ورود">
+            </a>
+            <a href="#"> 
+                <img src="../images/sebad.png" alt="سبد خرید">
+            </a>
+</div>
+
+    </header>
+  <main>
+    <div class="menu-bar1">
+        <ul>
+          <li>دسته‌بندی کالاها</li>
+          <li>سوپرمارکت</li>
+          <li>کارت هدیه</li>
+          <li>پرفروش‌ترین‌ها</li>
+          <li>تخفیف‌ها و پیشنهادها</li>
+          <li>سوالی دارید؟</li>
+          <li>در دیجی‌کالا بفروشید</li>
+        </ul>
+      </div>
+      <div class="slider">
+          <div class="slides">
+              <div class="slide"><img src="images/k.gif" alt="Slide 1"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+              <div class="slide"><img src="images/a.webp" alt="Slide 2"></div>
+          </div>
+          <div class="navigation">
+              <button class="prev">&#10094;</button>
+              <button class="next">&#10095;</button>
+          </div>
+          <div class="dots"></div>
+      </div>
+  
+      <script>
+          const slides = document.querySelector('.slides');
+          const slide = document.querySelectorAll('.slide');
+          const prev = document.querySelector('.prev');
+          const next = document.querySelector('.next');
+          const dotsContainer = document.querySelector('.dots');
+  
+          let currentIndex = 0;
+          let direction = 1; // 1 for left to right, -1 for right to left
+  
+          function createDots() {
+              dotsContainer.innerHTML = '';
+              slide.forEach((_, idx) => {
+                  const dot = document.createElement('span');
+                  dot.classList.add('dot');
+                  if (idx === currentIndex) dot.classList.add('active');
+                  dot.addEventListener('click', () => showSlide(idx));
+                  dotsContainer.appendChild(dot);
+              });
+          }
+  
+          function showSlide(index) {
+              if (index >= slide.length) {
+                  currentIndex = 0;
+              } else if (index < 0) {
+                  currentIndex = slide.length - 1;
+              } else {
+                  currentIndex = index;
+              }
+              const offset = currentIndex * -100;
+              slides.style.transform = `translateX(${offset}%)`;
+              updateDots();
+          }
+  
+          function updateDots() {
+              const dots = document.querySelectorAll('.dot');
+              dots.forEach((dot, idx) => {
+                  dot.classList.toggle('active', idx === currentIndex);
+              });
+          }
+  
+          prev.addEventListener('click', () => {
+              showSlide(currentIndex - 1);
+          });
+  
+          next.addEventListener('click', () => {
+              showSlide(currentIndex + 1);
+          });
+  
+          // Auto-slide every 3 seconds
+          setInterval(() => {
+              showSlide(currentIndex + direction);
+          }, 3000);
+  
+          // Initialize
+          createDots();
+          updateDots();
+          
+      </script>
+  </main>
+    <footer style="background-color: #ffffff;margin-top: 100px;">
+        <hr style="border:.1px solid #d7d2d2;margin-top: -20px;width: 98%;">
+        <img src="../images/full-horizontal.svg" alt="لوگو" style="margin-left:84%;width: 230px;margin-top: 25px;">
+        <p style="margin-left: 62%;display: inline-block;font-size: 19px;">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ |&nbsp; ۹۱۰۰۰۱۰۰۰-۲۱ &nbsp; | &nbsp;  ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم
+            </p>
+            <div class="footer-images">
+                <div class="image-container">
+                   <a href="#"> <img src="../images/express-delivery.svg" alt="تحویل اکسپرس"></a>
+                    <p>تحویل اکسپرس</p>
+                </div>
+                <div class="image-container">
+                   <a href="#"> <img src="../images/pardagkt.svg" alt="پرداخت در محل"></a>
+                    <p>پرداخت در محل</p>
+                </div>
+                <div class="image-container">
+                    <a href="#"><img src="../images/support.svg" alt="پشتیبانی 24/7"></a>
+                    <p>پشتیبانی 24/7</p>
+                </div>
+                <div class="image-container">
+                    <a href="#"> <img src="../images/days-return.svg" alt="7 روز ضمانت بازگشت"></a>
+                    <p>7 روز ضمانت بازگشت</p>
+                </div>
+                <div class="image-container">
+                    <a href="#"><img src="../images/original-products.svg" alt="کالای اصل"></a>
+                    <p>کالای اصل</p>
+                </div>
+            </div>
+        
+            <div class="footer-row">
+                <!-- بخش راست -->
+                 <div class="footer-item">
+                    <h2>با دیجی‌کالا</h2>
+                <ul style="font-size: 18px;">
+                  <li><a href="#">اتاق خبر دیجی‌کالا</a></li>
+                  <li><a href="#">فروش در دیجی‌کالا</a></li>
+                  <li><a href="#">فرصت‌های شغلی </a></li>
+                  <li><a href="#"> گزارش تخلف در دیجی‌کالا</a></li>
+                  <li><a href="#">تماس با دیجی‌کالا </a></li>
+                  <li><a href="#">درباره دیجی‌کالا </a></li>
+                </ul>
+                 </div>
+                <div class="footer-item">
+                    <h2>خدمات مشتریان</h2>
+                    <ul style="font-size: 18px;">
+                        <li><a href="#">پاسخ به پرسش‌های متداول</a></li>
+                        <li><a href="#">رویه‌های بازگرداندن کالا</a></li>
+                        <li><a href="#">شرایط استفاده</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                        <li><a href="#">گزارش باگ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h2>راهنمای خرید از دیجی‌کالا</h2>
+                    <ul style="font-size: 18px;">
+                        <li><a href="#">نحوه ثبت سفارش</a></li>
+                        <li><a href="#">رویه ارسال سفارش</a></li>
+                        <li><a href="#">شیوه‌های پرداخت</a></li>
+                    </ul>
+                </div>
+                <!-- بخش چپ -->
+                <div class="container" style=" width:300px;">
+                    <h2 style="margin-right:95px;">همراه ما باشید !</h2>
+                    <div class="social-icons">
+                        <a href="#">  <img src="../images/instagram-logo-24.png" alt="" style="width: 50px;color: #000;" class="img24"></a>
+                        <a href="#">  <img src="../images/linkedin-square-logo-24 (1).png" alt="" style="width: 50px;" class="img25"></a>
+                     <a href="#"><img src="../images/twitter-logo-24 (1).png" alt="" style="width: 50px;" class="img26"></a>
+                    </div>
+                    <form action=""  method="get">  
+                    <div class="email-form">
+                     <input type="email" id="emailInput" placeholder="ایمیل خود را وارد کنید..." oninput="checkEmail()">
+                        <button id="submitButton" class="button">ثبت</button></form>
+                    </div>
+                </div>
+            
+                <script>
+                    function checkEmail() {
+                        var emailInput = document.getElementById('emailInput');
+                        var submitButton = document.getElementById('submitButton');
+                        var emailValue = emailInput.value;
+            
+                        if (emailValue.endsWith('@gmail.com')) {
+                            submitButton.classList.add('red-button');
+                        } else {
+                            submitButton.classList.remove('red-button');
+                        }
+                    }
+                </script>
+   
+            </div>
+             
+            <div class="download-bar">
+                <a href="#" class="store-link"> <img src="../images/coffe-bazzar.svg" alt="دانلود از کافه بازار" style="height: 50px;margin-left: -30px;border-radius: 8px;"></a>
+                <a href="#" class="store-link"><img src="../images/myket.svg" alt="" style="height: 50px;margin-left: -30px;border-radius: 8px; margin-top: -4px;"></a>
+                <a href="#" class="store-link"><img src="../images/sib-app.svg" alt="" style="height: 50px;border-radius: 8px;margin-left: -25px;"></a>
+                <a href="#" class="store-link"><img src="../images/More.svg" alt="" style="background-color: #ffffff;height: 50px; border-radius: 4px;margin-top: -4px;border-radius: 8px;margin-left: -20px;"></a>
+                <img src="../images/footerlogo2.webp" alt="" style="float: right;width: 55px;margin-top: auto;">
+                <p style="float: right;margin-right:20px;font-size: 30px;margin-top: 10px;color: #000;">دانلود اپلیکشین دیجی‌کالا</p>
+            </div>
+            <hr style="border:.1px solid #d7d2d2;margin-top: 30px;width: 98%;">
+            <div class="footer6">
+                <div class="icons-container">
+       
+                    <div class="icon">
+                        <img src="../images/kasbokar.webp" alt="عضو اتحادیه کشوری کسب و کارهای مجازی">
+                    </div>
+                   
+                    <div class="icon">
+                        <img src="../images/kasbokar.webp" alt="نماد ساماندهی رسانه‌های دیجیتال">
+                    </div>
+                    <div class="icon">
+                        <img src="../images/rezi.webp" alt="نماد ۱">
+                    </div>
+                </div>
+                <h1 style="text-align: right;margin-right: 25px;margin-top: 50px;">فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h1>
+                <p id="footer-text" class="collapsed" style="font-size: 19px;text-align: right; color: #8a8a8a;margin-right: 45px;">
+                   
+                      
+        یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمان ی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛<br>  ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+                    <br>
+                    <span id="more-text" style="display: none;">
+                        
+                        
+                        <span class="nevshte-footer">کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد. هر یک از روش های ارسال دیجی کالا شرایط و ویژگی‌های خاص خود را دارند که ممکن است گاهی برای کاربران جدید، مبهم و پیچیده به نظر برسند. برای آگاهی</span><br>
+                        <span class="nevshte-footer">بیشتر مشتریان از خدمات دیجی‌کالا، این فروشگاه اینترنتی در بخشی از وب‌سایت خود راهنمای کاملی از شیوه‌‌های ارسال را به صورت ساده و به دور از پیچیدگی، قرار داده است که شامل 8 نوع ارسال کالا به روش‌های</span><br>
+                        <span class="nevshte-footer">زیر است: ارسال امروز، دریافت حضوری، دریافت از گنجه، ارسال توسط فروشنده، ارسال عادی، ارسال کالاهای بزرگ، سنگین و فوق سنگین، ارسال سریع سوپرمارکتی، ارسال با پست</span><br>
+                        <span class="nevshte-footer">کدام محصولات در دیجی‌کالا قابل سفارش هستند؟</span><br>
+                        <span class="nevshte-footer">تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز دیجی‌کالا که محصولات دارای تخفیف عالی</span><br>
+                        <span class="nevshte-footer">می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه</span><br>
+                        <span class="nevshte-footer">به معرفی آن‌ها می‌پردازیم که امکان ارسال امروز برای آن ها وجود دارد. </span><br>
+                        <span class="nevshte-footer">دیجی کالا در جشنواره‌های سالیانه خود به طور معمول روی تمام دسته بندی‌های کالایی تخفیف‌های عالی قرار‌می‌دهد. به عنوان مثال در زمان بلک فرایدی یا حراج جمعه سیاه، در این سال‌ها بیشترین درصد تخفیف در</span><br>
+                        <span class="nevshte-footer">اختیار مشتریان دیجی‌کالا قرار گرفته‌است و شامل دسته بندی های مختلف از موبایل و لپ تاپ تا عطر و لباس و حتی غذای حیوانات خانگی بوده‌است. </span><br>
+                        <span class="nevshte-footer">کالای دیجیتال</span><br>
+                        <span class="nevshte-footer">انواع گوشی موبایل از برندهای مختلفی مثل آیفون،  گوشی سامسونگ، گوشی نوکیا، گوشی شیائومی، گوشی هواوی، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار مثل تبلت سامسونگ نوت 10، انواع</span><br>
+                        <span class="nevshte-footer">هندزفری مثل هندزفری بی سیم، تلوزیون از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل مودم ایرانسل، آنتن و ... تنها بخشی از محصولاتی هستند که</span><br>
+                        <span class="nevshte-footer">زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.</span><br>
+                        <span class="nevshte-footer">خودرو، ابزار و تجهیزات صنعتی</span><br>
+                        <span class="nevshte-footer">نواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و صفحه کلاج و... و</span><br>
+                        <span class="nevshte-footer">لوازم مصرفی خودرو مثل کفپوش سانا در این گروه قرار می‌گیرند.</span><br>
+                        <span class="nevshte-footer">مد و پوشاک</span><br>
+                        <span class="nevshte-footer">محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر، شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از برندهای مطرح</span><br>
+                        <span class="nevshte-footer">ایرانی و خارجی موجود در دیجی کالا مثل آدیداس، نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.</span><br>
+                        <span class="nevshte-footer">اسباب بازی کودک و نوزاد</span><br>
+                        <span class="nevshte-footer">در این دسته از کالاهای دیجی‌کالا، انواع لوازم بهداشتی و حمام کودک و نوزاد، انواع پوشاک و کفش، تبلت، اسباب‌بازی، لوازم اتاق خواب کودک، لوازم ایمنی، لوازم شخصی و غذا خوری و ... قرار می‌گیرد تا خرید را برای پدر</span><br>
+                        <span class="nevshte-footer">و مادرها به کاری سریع و آسان تبدیل کند.</span><br>
+                        <span class="nevshte-footer">کالاهای سوپر مارکتی</span><br>
+                        <span class="nevshte-footer">هر چیزی از مواد خوراکی که به آن نیاز دارید، در سوپرمارکت دیجی‌کالا پیدا می‌شود، محصولات پرطرفداری مثل کره بادام‌زمینی، عسل، سس، قهوه، زعفران، شکلات، انواع نان و ... از برندهای معتبر و معروفی مثل نستله،</span><br>
+                        <span class="nevshte-footer">نوتلا، استارباکس، مزمز، چی توز و ... همگی در اختیار شما هستند و تا رسیدن به آشپزخانه شما تنها چند کلیک فاصله دارند.</span><br>
+                        <span class="nevshte-footer">زیبایی و سلامت</span><br>
+                        <span class="nevshte-footer">انواع لوازم آرایش مثل لاک، رنگ مو، لوازم آرایش لب، چشم، صورت و... همگی در دیجی‌کالا موجود هستند. همچنین محصولات بهداشتی مثل انواع شامپو، کرم ضد آفتاب، ماسک صورت، ضد تعریق، ماسک مو  و...، انواع</span><br>
+                        <span class="nevshte-footer">لوازم شخصی برقی، ست هدیه، بهترین انواع عطر و اسپری، کرم پودر، ریمل و رژلب وانواع زیورآلات طلا و نقره مثل سرویس طلا، سرویس نقره و... به همراه وسایل مراقبت شخصی طبی در گروه زیبایی و سلامت دیجی‌کالا</span><br>
+                        <span class="nevshte-footer">قرار می‌گیرد. در این بخش برندهای مطرحی مثل اسنس، پنبه ریز، سینره و... حضور دارند.همچنین میتوانید انواع مکمل غذایی و دارویی مثل داروی مناسب سرماخوردگی را در دیجی کالا تهیه کنید.</span><br>
+                        <span class="nevshte-footer">خانه و آشپزخانه</span><br>
+                        <span class="nevshte-footer">یکی از متنوع‌ترین بخش‌های دیجی‌کالا، بخش لوازم خانه و آشپزخانه است که از محصولاتی مثل صندلی گیمینگ در بخش صندلی‌ها گرفته تا انواع مبل راحتی، انواع آبگرمکن مثل آبگرمکن بوتان، لباسشویی‌های متنوع</span><br>
+                        <span class="nevshte-footer">مثل انواع لباسشویی اسنوا، شیرآلات مختلف مثل شیرآلات قهرمان و...، ظروف و همچنین لوازم برقی آشپزخانه مثل توستر و... را شامل می‌شود و امکان خریدی عالی را برای مشتریان فراهم کرده است. در بخش لوازم</span><br>
+                        <span class="nevshte-footer">خانگی دیجی‌کالا، برندهای معتبری مثل تفال، اخوان، فیلیپس، ال جی، اسنوا، جی پلاس و... حضور دارند.                    </span><br>
+                        <span class="nevshte-footer">کتاب، لوازم تحریر و هنر</span><br>
+                        <span class="nevshte-footer">بخش هنر، کتاب، رمان و لوازم تحریر دیجی‌کالا نیز یکی از متنوع‌ترین بخش‌های این فروشگاه اینترنتی است. انواع کتاب و مجله، کتاب زبان، بازی، لوازم تحریر با طرح‌های مختلف مانند دختر کفشدوزکی، سازهایی</span><br>
+                        <span class="nevshte-footer">مثل پیانو، سنتور، هنگ درام  و... با بهترین قیمت‌ها و از بهترین برندها در دسترس شما قرار دارند.</span><br>
+                        <span class="nevshte-footer">ورزش و سفر</span><br>
+                        <span class="nevshte-footer">هر نوع وسیله و لباس ورزشی که فکرش را کنید، انواع وسایل کمپینگ و کوهنوردی، ساک و قمقمه ورزشی و وسایل سفر اربعین و... در این بخش قرار می‌گیرند. همچنین شما می‌توانید وسایل مد نظر خود را بر اساس نوع</span><br>
+                        <span class="nevshte-footer">ورزش (آبی، هوازی، بدنسازی و...) در دسته‌بندی‌های دیجی‌کالا پیدا کنید.</span><br>
+                        <span class="nevshte-footer">محصولات بومی و محلی</span><br>
+                        <span class="nevshte-footer">و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی متفاوتی مثل انواع خوراکی، گلیم و گبه، ابزار و ... تلاش کرده تا بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در این بخش شما</span><br>
+                        <span class="nevshte-footer">می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص به سفره هفت‌سین  و پذیرایی از مهمانان در روزهای نوروز، انواع آیینه و شمعدان و هر آن چیزی را که برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با</span><br>
+                        <span class="nevshte-footer">قیمت مناسب و تنوع بسیار بالا انتخاب کنید. همچنین در صفحه برچسب ها، امکان مشاهده و خرید انواع محصولات با طرح های بومی وجود دارد.  دیجی‌کالا همچنین برای اینکه حال و هوای عید را به اعضای خود هدیه</span><br>
+                        <span class="nevshte-footer">کند، تقویم ۱۴۰۱، انواع ایده عکس پروفایل عید نوروز، آهنگ‌های عید نوروز و موزیک‌های شاد بهاری، وسایل مربوط به خانه‌تکانیی و انواع لباس های عید  را برای شما فراهم کرده است تا بتوانید در کنار خرید خود، از این</span><br>
+                        <span >حال و هوای تازه نهایت لذت را ببرید.</span><br>
+                    
+                    </span>
+                </p>
+                <button id="toggle-button">مشاهده بیشتر></button>
+              
+            </div>
+            
+            
+            
+            
+           <script>
+             document.getElementById("toggle-button").addEventListener("click", function() {
+                const moreText = document.getElementById("more-text");
+                const footerText = document.getElementById("footer-text");
+            
+                if (moreText.style.display === "none") {
+                    moreText.style.display = "inline";
+                    this.textContent = "بستن>";
+                    footerText.classList.remove("collapsed");
+                } else {
+                    moreText.style.display = "none";
+                    this.textContent = "مشاهده بیشتر>";
+                    footerText.classList.add("collapsed");
+                }
+            });
+           </script>
+             <hr style="border:.1px solid #d7d2d2;margin-top: 110px;width: 98%;">
+      </footer>
+      <div class="support-button">
+        <a href="./poshtibani/index.html" target="_blank">
+            <img src="../images/contact-us--620.png" alt="پشتیبانی">
+        </a>
+    </div>
+    <script>
+        function checkEmail() {
+            var emailInput = document.getElementById('emailInput');
+            var submitButton = document.getElementById('submitButton');
+            var emailValue = emailInput.value;
+
+            if (emailValue.endsWith('@gmail.com')) {
+                submitButton.classList.add('red-button');
+            } else {
+                submitButton.classList.remove('red-button');
+            }
+        }
+    </script> 
+      <div class="meam"><p style="text-align: center;margin-top: -8px;">برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.</p></div>
+      <hr style="border:.1px solid #d7d2d2;margin-top: 20px;width: 98%;">
+   <script>document.getElementById('toggle-dark-mode').addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+});
+</script>
+<script>
+    const menuBar = document.querySelector('.menu-bar1');
+
+let isDragging = false;
+let startX, scrollLeft;
+
+menuBar.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  menuBar.classList.add('active');
+  startX = e.pageX - menuBar.offsetLeft;
+  scrollLeft = menuBar.scrollLeft;
+});
+
+menuBar.addEventListener('mouseleave', () => {
+  isDragging = false;
+  menuBar.classList.remove('active');
+});
+
+menuBar.addEventListener('mouseup', () => {
+  isDragging = false;
+  menuBar.classList.remove('active');
+});
+
+menuBar.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  e.preventDefault();
+  const x = e.pageX - menuBar.offsetLeft;
+  const walk = (x - startX) * 2; // سرعت اسکرول
+  menuBar.scrollLeft = scrollLeft - walk;
+});
+
+// پشتیبانی از لمس برای موبایل
+menuBar.addEventListener('touchstart', (e) => {
+  isDragging = true;
+  startX = e.touches[0].pageX - menuBar.offsetLeft;
+  scrollLeft = menuBar.scrollLeft;
+});
+
+menuBar.addEventListener('touchend', () => {
+  isDragging = false;
+});
+
+menuBar.addEventListener('touchmove', (e) => {
+  if (!isDragging) return;
+  const x = e.touches[0].pageX - menuBar.offsetLeft;
+  const walk = (x - startX) * 2; // سرعت اسکرول
+  menuBar.scrollLeft = scrollLeft - walk;
+});
+
+</script>
+</body>
+</html>
